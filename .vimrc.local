@@ -1,0 +1,6 @@
+# spf13-vim installation
+set t_Co=256
+let g:solarized_termcolors=256
+set mouse=v
+colorscheme solarized
+set nospell

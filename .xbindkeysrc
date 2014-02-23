@@ -1,0 +1,7 @@
+".scripts/backlight_toggle"
+    XF86Launch1
+".scripts/brightness_down"
+	XF86MonBrightnessDown
+".scripts/brightness_up"
+	XF86MonBrightnessUp
+

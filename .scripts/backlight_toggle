@@ -1,0 +1,14 @@
+#!/usr/bin/env python2
+f = open('/sys/class/backlight/intel_backlight/brightness')
+try:
+    s = int(f.read())
+except:
+    s = 0
+f.close()
+if s == 0:
+    s = 4000
+else:
+    s = 0
+g = open('/sys/class/backlight/intel_backlight/brightness','w')
+g.write(str(s))
+g.close()

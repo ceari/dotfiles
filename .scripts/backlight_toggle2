@@ -1,0 +1,11 @@
+#!/usr/bin/env python2
+f = open('/proc/easy_backlight')
+try:
+    s = int(f.read())
+except:
+    s = 0
+f.close()
+s = 1-s
+g = open('/proc/easy_backlight','w')
+g.write(str(s))
+g.close()
